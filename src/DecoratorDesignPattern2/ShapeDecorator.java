@@ -1,14 +1,13 @@
 package DecoratorDesignPattern2;
 
 public class ShapeDecorator  implements Shape{
-    private final Shape shape;
 
-    public ShapeDecorator(Shape shape){
-        this.shape = shape ;
+    protected  Shape DecoShape ;
+
+    public ShapeDecorator(Shape DecoShape){
+        this.DecoShape = this.DecoShape;
     }
-
-    @Override
     public void draw() {
-        shape.draw();
+        DecoShape.draw();
     }
 }
