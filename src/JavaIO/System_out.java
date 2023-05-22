@@ -2,7 +2,7 @@ package JavaIO;
 
 import static java.lang.System.*;
 
-public class print {
+public class System_out {
     public static void main(String[] args) {
         // print : sameline
         out.print("Hi ");
@@ -21,6 +21,19 @@ public class print {
         // automatically appends zero
         // to the rightmost part of decimal
         float n = 5.2f;
+        out.printf(
+                "Formatted to "
+                        + "specific width: n = %.4f\n",
+                n);
+        n = 2324435.3f;
 
+        // here number is formatted from
+        // right margin and occupies a
+        // width of 20 characters
+        System.out.printf(
+                "Formatted to "
+                        + "right margin: n = %20.4f\n",
+                n);
     }
+
 }
