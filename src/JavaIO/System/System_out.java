@@ -1,4 +1,4 @@
-package JavaIO;
+package JavaIO.System;
 
 import static java.lang.System.*;
 
